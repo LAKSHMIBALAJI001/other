@@ -17,7 +17,7 @@ export default function Navbar() {
       ></i>
       <div>
         <NavLink className="Navbar-logo" to="/" onClick={handleClose}>
-          NithiTex
+         NithiTex
         </NavLink>
       </div>
       <div
@@ -25,29 +25,29 @@ export default function Navbar() {
       >
         <li className="Navbar-item">
           <NavLink
-            onClick={() => changeCategory("mens")}
+            onClick={() => changeCategory("Home")}
             className="Navbar-links"
             to="/home"
           >
-            HOME
+            Home
           </NavLink>
         </li>
         <li className="Navbar-item">
           <NavLink
-            onClick={() => changeCategory("womens")}
+            onClick={() => changeCategory("Nithitex Offer's")}
             className="Navbar-links"
-            to="/home"
+            to="/Product"
           >
-            NITHITEX OFFER'S
+            Nithitex Offer's
           </NavLink>
         </li>
         <li className="Navbar-item">
           <NavLink
-            onClick={() => changeCategory("kids")}
-            className="Navbar-links"
+            onClick={() => changeCategory("Become a seller")}
+            className="Navbar-links"s
             to="/home"
           >
-            BECOME A SELLER
+            Become a seller
           </NavLink>
         </li>
       </div>
@@ -77,13 +77,13 @@ export default function Navbar() {
           </NavLink>
         </li>
         <li className={`Navbar-item ${isOpen ? "opac" : ""}`}>
-          <NavLink onClick={handleClose} className="Navbar-links" to="/cart">
+          <NavLink onClick={handleClose} className="Navbar-links" to="/Cart">
             <i className="fas fa-shopping-cart icon"></i>
             <div>Cart</div>
           </NavLink>
         </li>
       </div>
-      <NavLink onClick={handleClose} to="/cart">
+      <NavLink onClick={handleClose} to="/Cart">
         <i className="fas fa-shopping-cart icon-cart"></i>
       </NavLink>
     </nav>

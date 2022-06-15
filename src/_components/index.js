@@ -1,10 +1,9 @@
 import Navbar from "./Navbar";
 import ProductHome from "./ProductHome";
-/* import Footer from "./Footer" */
-
+import Product from "./Product";
 
 export  {
     Navbar,
     ProductHome,
-    /* Footer */
+    Product
 }

@@ -3,7 +3,6 @@ import ForgetPassword from "./ForgetPassword";
 import Home from "./Home";
 import WishList from "./WishList";
 import Cart from "./Cart";
-/* import Footer from "../_components/Footer"; */
 
 export {
     Authentication,
@@ -11,5 +10,4 @@ export {
     Home,
     WishList,
     Cart
-   /*  Footer */
 }
