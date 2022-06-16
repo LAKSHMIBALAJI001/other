@@ -1,9 +1,14 @@
 import Navbar from "./Navbar";
 import ProductHome from "./ProductHome";
-import Product from "./Product";
-
+import Cart from "./Cart";
+import Checkout from "./Checkout";
+import AmountButtons from "./AmountButtons";
+import PageHero from "./PageHero";
 export  {
     Navbar,
     ProductHome,
-    Product
+    Cart,
+    Checkout,
+    AmountButtons,
+    PageHero
 }
