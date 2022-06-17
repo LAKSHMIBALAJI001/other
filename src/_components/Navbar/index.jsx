@@ -45,7 +45,7 @@ export default function Navbar() {
           <NavLink
             onClick={() => changeCategory("Become a seller")}
             className="Navbar-links"s
-            to="/home"
+            to="/"
           >
             Become a seller
           </NavLink>

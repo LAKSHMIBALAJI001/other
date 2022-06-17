@@ -1,48 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { useProductsContext } from "../../_context/products_context";
-import AddToCart from "../../_components/Cart/AddToCart";
-import PageHero from "../../_components/PageHero/index";
-import "../../App.css";
+import React from 'react'
+import './index.css'
 
-const ProductList = () => {
-  const { products } = useProductsContext();
+const index = () => {
   return (
-    <>
-      <PageHero item={products.length} name="PRODUCTS" />
-      <div className="cocktails-center">
-        {products.map((product) => {
-          const { id, image, name, price } = product;
-          return (
-            <article key={id} className="cocktail">
-              <div className="img-container">
-                <img src={image} alt={name} />
-              </div>
-              <div className="cocktail-footer">
-                <div className="product">
-                  <h4>{name}</h4>
-                  <h4 className="price">${price}</h4>
-                </div>
+    <div>
+      Nithitex Offer's Section Will Be Updated Soon.........
+    </div>
+  )
+}
 
-                <AddToCart product={product} />
-                <Link
-                  to={`/products/${id}`}
-                  className="add-cart"
-                  style={{
-                    color: "#17252A",
-                    background: "#fff",
-                    border: "2px solid #17252A",
-                  }}
-                >
-                  {/*className="prod-details">*/}
-                  View
-                </Link>
-              </div>
-            </article>
-          );
-        })}
-      </div>
-    </>
-  );
-};
-export default ProductList;
+export default index
